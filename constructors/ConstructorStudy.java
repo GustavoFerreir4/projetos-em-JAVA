@@ -1,6 +1,4 @@
-
-import java.lang.reflect.Constructor;
-import java.util.Time;
+import java.time.LocalTime;
 
 public class ConstructorStudy {
 
@@ -8,27 +6,26 @@ public class ConstructorStudy {
     private String nasc;
     private boolean isEnrolled;
     private float moneyInWallet;
+    private String createdAt;
 
 
     public ConstructorStudy(){
         this.name = "unnamed";
         this.moneyInWallet = 0.0f;
-        this
+        this.createdAt = LocalTime.now().toString();
     }
 
     
     public ConstructorStudy(String name){
         this.name = name;
         this.moneyInWallet = 0.0f;
+        this.createdAt = LocalTime.now().toString();
         }
 
     public ConstructorStudy(String name, float moneyInWallet) {
         this.name = name;
         this.moneyInWallet = moneyInWallet;
-    }
-    
-    public void main(String[] args){
-        
+        this.createdAt = LocalTime.now().toString();
     }
 
     public String getName() {
@@ -63,9 +60,14 @@ public class ConstructorStudy {
         this.moneyInWallet = moneyInWallet;
     }
 
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
     public void status(){
         System.out.println("Nome do aluno: " + this.name);
         System.out.println("Está matriculado: " + Boolean.toString(isEnrolled));
         System.out.println("Dinheiro na carteira: " + Float.toString(moneyInWallet));
+        System.out.println("Objeto criado em: " + this.createdAt);
     }
 }

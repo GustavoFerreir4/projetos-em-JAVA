@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import javax.lang.model.util.ElementScanner14;
 public class Challenge {
     Scanner kbListener = new Scanner(System.in);
     public void main(){
