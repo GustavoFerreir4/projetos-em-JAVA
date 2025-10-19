@@ -1,4 +1,4 @@
-public class TimeConversor {
+public class TimeConverter {
 
     public static float hoursToSeconds(float timeInHours){
         return timeInHours * (60 * 60);

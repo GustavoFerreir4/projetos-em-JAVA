@@ -1,12 +1,22 @@
 public class Car extends Vehicle {
-    
+
+    private String color;
+
     public Car(){
         super();
+        this.color = "default";
     }
 
     public Car(String model, String brand, int year){
         super(model, brand, year);
+        this.color = "default";
     }
+
+    public Car(String model, String brand, int year, String color){
+        super(model, brand, year);
+        this.color = color;
+    }
+
 
     @Override
     public void speedUp(float speedIncrement) {
@@ -74,12 +84,20 @@ public class Car extends Vehicle {
 
 
     public String status(){
-        String carInfo = getModel() + " da marca " + getBrand() + " do ano " + Integer.toString(getYear()) + "\n";
+        String carInfo = getModel() + " da marca " + getBrand() + " do ano " + Integer.toString(getYear()) + " da cor " + getColor() + "\n";
         String carStatus = "Possui " + Float.toString(getFuel()) + "% de combustível restante. \n" 
                             + "rodou " + Float.toString(getDrivenDistance()) + "km \n"
                             + "está " + (isMoving() ? "em movimento à uma velocidade de " + getSpeed() + "km/h" : "parado") + "\n";
         String fullString = carInfo + carStatus;
         return fullString;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
 }
