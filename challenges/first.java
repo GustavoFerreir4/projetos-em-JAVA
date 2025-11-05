@@ -29,6 +29,65 @@ public class first {
         int hours = date.getHour();
         System.out.println(hours);
     }
+<<<<<<< HEAD
+=======
+
+    public byte getByte_data() {
+        return byte_data;
+    }
+
+    public void setByte_data(byte byte_data) {
+        this.byte_data = byte_data;
+    }
+
+    public short getShort_number() {
+        return short_number;
+    }
+
+    public void setShort_number(short short_number) {
+        this.short_number = short_number;
+    }
+
+    public int getInteger_number() {
+        return integer_number;
+    }
+
+    public void setInteger_number(int integer_number) {
+        this.integer_number = integer_number;
+    }
+
+    public long getLong_number() {
+        return long_number;
+    }
+
+    public void setLong_number(long long_number) {
+        this.long_number = long_number;
+    }
+
+    public float getFloat_number() {
+        return float_number;
+    }
+
+    public void setFloat_number(float float_number) {
+        this.float_number = float_number;
+    }
+
+    public double getDouble_number() {
+        return double_number;
+    }
+
+    public void setDouble_number(double double_number) {
+        this.double_number = double_number;
+    }
+
+    public boolean isBool_data() {
+        return bool_data;
+    }
+
+    public void setBool_data(boolean bool_data) {
+        this.bool_data = bool_data;
+    }
+>>>>>>> 5ce7d4bce73e719c7d96e285423e98e5de7ccd3d
 
     public String stringFyVariables(){
         String varString = "Byte:" + Byte.toString(byte_data);

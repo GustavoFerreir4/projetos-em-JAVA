@@ -6,7 +6,7 @@ public class ConstructorStudy {
     private String nasc;
     private boolean isEnrolled;
     private float moneyInWallet;
-    private String createdAt;
+    private final String createdAt;
 
 
     public ConstructorStudy(){
